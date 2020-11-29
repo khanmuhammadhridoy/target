@@ -17,7 +17,7 @@ header {
     color: #e6ad21 !important;
 }
 
-.nav ul li a:hover::before {
+.nav ul li a span:hover::before {
     content: "";
     position: absolute;
     width: 10px;
@@ -28,7 +28,7 @@ header {
     border-radius: 50%;
 }
 
-.nav ul li a:hover::after {
+.nav ul li a span:hover::after {
     content: "";
     position: absolute;
     width: 5px;
@@ -74,4 +74,38 @@ header {
 .text button:hover {
     color: #fff;
     background: #e6ad21;
+}
+
+
+.search-box button {
+    background: none;
+    border: 0px;
+    position: absolute;
+    left: 75%;
+    top: 11px;
+}
+.search-box input[type="text"] {
+    width: 0px;
+    height: auto;
+    background: transparent;
+    border: 0px;
+    opacity: 0;
+    transition: .5s;
+}
+.search-box .fa-search {
+    position: absolute;
+    left: 4px;
+    top: 3px;
+    background: transparent;
+    color: rgb(202 202 202);
+}
+.search-box:hover i{
+    color: #fdcc42 !important;
+}
+.search-box:hover input[type="text"] {
+    background: #fff;
+    width: 146px;
+    opacity: 1;
+    outline: none;
+    border-radius: 20px;
 }
